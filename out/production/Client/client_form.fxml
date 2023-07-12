@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientFormController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@28428245_rm222batch5-mind-16.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="30.0" layoutY="56.0" prefHeight="357.0" prefWidth="359.0" style="-fx-background-color: black;">
+         <content>
+            <VBox fx:id="txtVBox" prefHeight="337.0" prefWidth="357.0" style="-fx-background-color: bl;" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtSendMessage" layoutX="30.0" layoutY="429.0" prefHeight="42.0" prefWidth="217.0" promptText="Message" style="-fx-border-color: black;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="277.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-camera-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="345.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-send-52.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSend" layoutX="345.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnSendOnAction" opacity="0.0" prefHeight="28.0" prefWidth="28.0" />
+      <Button fx:id="btnImage" layoutX="272.0" layoutY="429.0" mnemonicParsing="false" onAction="#imageOnAction" opacity="0.0" prefHeight="40.0" prefWidth="52.0" />
+      <ScrollPane fx:id="scrollPane" layoutX="203.0" layoutY="286.0" onMouseEntered="#emojiMouseEnter" onMouseExited="#emojiMouseExit" style="-fx-background-color: black;">
+         <content>
+            <VBox fx:id="vBoxEmoji" prefHeight="139.0" prefWidth="42.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="204.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="176.0" AnchorPane.topAnchor="429.0">
+         <image>
+            <Image url="@icons8-smiling-face-with-sunglasses-96.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="204.0" layoutY="430.0" mnemonicParsing="false" onAction="#emojiBtnOnAction" opacity="0.0" prefHeight="40.0" prefWidth="40.0" text="Button" />
+      <Label fx:id="lblUser" layoutX="190.0" layoutY="14.0" prefHeight="28.0" prefWidth="70.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
