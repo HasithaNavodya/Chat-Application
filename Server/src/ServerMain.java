@@ -10,7 +10,7 @@ public class ServerMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        URL resource = ServerMain.class.getResource("server_form.fxml");
+        URL resource = ServerMain.class.getResource("view/server_form.fxml");
         Parent load = FXMLLoader.load(resource);
         stage.setScene(new Scene(load));
         stage.setTitle("Server");

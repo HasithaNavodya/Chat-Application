@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="adminAncPane" prefHeight="216.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginFormController">
+<AnchorPane fx:id="adminAncPane" prefHeight="216.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <ImageView fitHeight="265.0" fitWidth="398.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@14731376_rm222batch5-mind-03.jpg" />
+            <Image url="@../assets/14731376_rm222batch5-mind-03.jpg" />
          </image>
       </ImageView>
       <TextField fx:id="txtName" layoutX="48.0" layoutY="199.0" prefHeight="42.0" prefWidth="210.0" style="-fx-border-color: black;" />
@@ -22,13 +22,13 @@
          </font></Label>
       <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="277.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@icons8-login-button-100.png" />
+            <Image url="@../assets/icons8-login-button-100.png" />
          </image>
       </ImageView>
       <Button fx:id="btn" layoutX="275.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnOnAction" opacity="0.0" text="Login" />
       <ImageView fitHeight="80.0" fitWidth="97.0" layoutX="160.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@icons8-user-80.png" />
+            <Image url="@../assets/icons8-user-80.png" />
          </image>
       </ImageView>
       <Label layoutX="133.0" layoutY="23.0" prefHeight="27.0" prefWidth="135.0" text="JOIN CHATAPP">

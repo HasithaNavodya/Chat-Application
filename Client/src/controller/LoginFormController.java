@@ -1,3 +1,5 @@
+package controller;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -42,7 +44,7 @@ public class LoginFormController {
             Parent root = null;
             stage.setTitle("Client");
 
-            root = FXMLLoader.load(getClass().getResource("/client_form.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/view/client_form.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

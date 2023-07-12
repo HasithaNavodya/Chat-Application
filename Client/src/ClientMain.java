@@ -9,7 +9,7 @@ import java.net.URL;
 public class ClientMain extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        URL resource = ClientMain.class.getResource("loginForm.fxml");
+        URL resource = ClientMain.class.getResource("view/loginForm.fxml");
         Parent load = FXMLLoader.load(resource);
         stage.setScene(new Scene(load));
         stage.setTitle("Client");
